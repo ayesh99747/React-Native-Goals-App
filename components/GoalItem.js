@@ -1,3 +1,8 @@
+/*
+  * GoalItem Component
+  * This component represents a single goal item in the list.
+  * It displays the goal text and handles the deletion of the goal.
+*/
 import { StyleSheet, View, Text, Pressable, } from "react-native";
 
 function GoalItem(props) {

@@ -1,17 +1,31 @@
+/*
+  * GoalInput Component
+  * This component is responsible for taking user input for new goals.
+  * It includes a text input field, buttons to add a goal, clear all goals, and go back.
+*/
 import { View, TextInput, Button, StyleSheet, Modal, Image } from "react-native";
 import { useState } from "react";
 
+
 function GoalInput(props) {
   const [enteredGoalText, setEnteredGoalText] = useState("");
-
+  /*
+   * This function handles the input text change event.
+   */
   function goalInputHandler(enteredText) {
     setEnteredGoalText(enteredText);
   }
 
+  /*
+   * This function clears all goals from the list.
+   */
   function clearGoalsHandler() {
     props.clearGoalsHandler();
   }
 
+  /*
+   * This function handles the addition of a new goal.
+   */
   function addGoalHandler() {
     props.onAddGoal(enteredGoalText);
     setEnteredGoalText("");
