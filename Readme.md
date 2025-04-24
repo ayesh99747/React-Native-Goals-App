@@ -1,4 +1,4 @@
-# RNCourse: A React Native Goal Tracking App
+# A React Native Goal Tracking App
 
 This React Native application allows users to create, manage, and track their course goals.  It provides a simple and intuitive interface for adding goals, deleting them, and clearing all goals at once.
 
@@ -19,6 +19,9 @@ This React Native application allows users to create, manage, and track their co
   <img src="screenshots/3 Goal Shown on Home Screen - iOS.png" alt="Goal Display iOS" width="45%" />
 </p>
 <p align="center"><em>Figure 3: Goal shown on Home Screen on Android (left) and iOS (right)</em></p>
+
+
+> **Platform Styling Insight:** After comparing button behavior on Android and iOS, I learned that the default React Native `<Button />` has limited styling options on iOS, particularly lacking support for outlines. To maintain consistent button styles across platforms, I learnt about using `TouchableOpacity` with custom `borderWidth` and `borderColor` styling. This approach offers more control and ensures visual consistency.
 
 ## Key Features
 
